@@ -2,7 +2,7 @@
 
 This repo keep my personal customization files that I use to personalize my terminal experience.
 
-I got this idea from this video <https://www.youtube.com/watch?v=AK2JE2YsKto>, after that, I got a lot of more customizations.
+I got this repo from https://github.com/zenatuz/dotfiles.
 
 > This can be applied on Linux, Mac or Windows (WSL).
 
@@ -11,7 +11,7 @@ There is a script called [.install.sh](.install.sh) that do the initial setup of
 You can run the script directly with the following command:
 
 ```bash
-curl -s -L https://raw.githubusercontent.com/zenatuz/dotfiles/main/.install.sh | bash
+curl -s -L https://raw.githubusercontent.com/juranir/dotfiles/main/.install.sh | bash
 ```
 
 In the end, run the command to define ZSH as the default shell:
@@ -40,7 +40,7 @@ If you only want to get the files without installing anything new, just use YADM
 
 ```bash
 cd ~
-yadm clone git@github.com:zenatuz/dotfiles.git
+yadm clone git@github.com:juranir/dotfiles.git
 ```
 
 ## Font
