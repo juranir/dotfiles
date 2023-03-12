@@ -46,7 +46,7 @@ echo ""
 echo "Instaling oh-my-zsh powerlevel10k theme"
 echo 
 #############################################
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/themes/powerlevel10k/
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/themes/powerlevel10k/
 
 # Instaling homebrew
 echo ""
@@ -95,6 +95,10 @@ brew install \
   warrensbox/tap/tfswitch \
   yadm \
   wget
+  
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code-nerd-font
+
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   echo "Installing additional desktop packages and fonts for MacOS"
@@ -118,7 +122,16 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   brew install --cask spotify
   brew install --cask postman
   brew install --cask visual-studio-code
+  
 fi
+
+echo ""
+echo "Enable zsh theme"
+echo 
+#############################
+
+#git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+sed -i '' -e "s/ZSH_THEME=.*/ZSH_THEME\=\"powerlevel10k\/powerlevel10k\"/g" ~/.zshrc
 
 echo ""
 echo "Instaling Helm plugins"
