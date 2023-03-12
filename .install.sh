@@ -93,7 +93,8 @@ brew install \
   tfk8s \
   tldr \
   warrensbox/tap/tfswitch \
-  yadm
+  yadm \
+  wget
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   echo "Installing additional desktop packages and fonts for MacOS"
