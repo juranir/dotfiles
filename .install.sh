@@ -48,7 +48,7 @@ echo
 #############################################
 #git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/themes/powerlevel10k/
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-sed -i '' -e "s/ZSH_THEME=.*/ZSH_THEME\=\"powerlevel10k\/powerlevel10k\"/g" ~/.zshrc
+#sed -i '' -e "s/ZSH_THEME=.*/ZSH_THEME\=\"powerlevel10k\/powerlevel10k\"/g" ~/.zshrc
 
 # Instaling homebrew
 echo ""
@@ -98,14 +98,9 @@ brew install \
   warrensbox/tap/tfswitch \
   yadm \
   wget \
-  font-meslo-lg-nerd-font
+  font-meslo-lg-nerd-font \
+  1password-cli
 
-
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  echo "Installing additional desktop packages and fonts for MacOS"
-
-  brew tap homebrew/cask-fonts
-  brew install 1password-cli
 
   brew install --cask 1password
   brew install --cask dbeaver-community
@@ -146,11 +141,13 @@ echo "Cloning Dotenv project to ~/"
 echo 
 
 # Removing temp files
-rm -rf ~/.zshrc ~/.p10k.zsh
+#rm -rf ~/.zshrc ~/.p10k.zsh
 
 # Cloning dotfiles
-cd ~
-yadm clone git@github.com:zenatuz/dotfiles.git
+cd /tmp
+yadm clone git@github.com:juranir/dotfiles.git
+cat dotfiles/.zshrc > ~/.zshrc
+cat dotfiles/.p10k.zsh > ~/.p10k.zsh
 
 sudo -k
 
