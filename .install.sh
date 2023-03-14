@@ -71,6 +71,7 @@ echo
 #############################################
 
 brew tap cantino/mcfly
+brew tap homebrew/cask-fonts
 
 brew install \
   ansible \
@@ -96,10 +97,8 @@ brew install \
   tldr \
   warrensbox/tap/tfswitch \
   yadm \
-  wget
-  
-brew tap homebrew/cask-fonts
-brew install --cask font-fira-code-nerd-font
+  wget \
+  font-meslo-lg-nerd-font
 
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
