@@ -135,7 +135,7 @@ echo
 helm plugin install https://github.com/databus23/helm-diff
 
 echo ""
-echo "Cloning Dotenv project to ~/"
+echo "Cloning Dotenv project to /tmp"
 echo 
 
 # Removing temp files
@@ -143,7 +143,7 @@ echo
 
 # Cloning dotfiles
 cd /tmp
-yadm clone git@github.com:juranir/dotfiles.git
+yadm clone -f git@github.com:juranir/dotfiles.git
 cat dotfiles/.zshrc > ~/.zshrc
 cat dotfiles/.p10k.zsh > ~/.p10k.zsh
 
