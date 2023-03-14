@@ -109,14 +109,6 @@ test -d ~/.krew/bin && export PATH="${PATH}:${HOME}/.krew/bin"
 
 test -f /opt/homebrew/opt/kube-ps1/share/kube-ps1.sh && source /opt/homebrew/opt/kube-ps1/share/kube-ps1.sh
 
-# Loading Alviere utils
-test -d ~/code/mezu/repos/ops/utils && export PATH="${PATH}:${HOME}/code/mezu/repos/ops/utils"
-test -d ~/code/mezu/repos/docker/generic-builder/bin && export PATH="${PATH}:${HOME}/code/mezu/repos/docker/generic-builder/bin"
-test -d /opt/homebrew/opt/mysql-client/bin && export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
-
-# Loading Personal utils
-test -d ~/code/mezu/repos/renato.batista/utils && export PATH="${PATH}:${HOME}/code/mezu/repos/renato.batista/utils"
-
 # Loading Mcfly
 eval "$(mcfly init zsh)"
 
@@ -125,20 +117,8 @@ eval "$(mcfly init zsh)"
 
 test -d /opt/homebrew/opt/mysql-client/ && export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
-# Load NetskopeCA if available
-
-test -f "/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem" && \
-    export REQUESTS_CA_BUNDLE=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem &&\
-    export CURL_CA_BUNDLE=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem &&\
-    export SSL_CERT_FILE=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem &&\
-    export GIT_SSL_CAPATH=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem &&\
-    export AWS_CA_BUNDLE=/Library/Application\ Support/Netskope/STAgent/data/netskope-cert-bundle.pem
 
 (( ! ${+functions[p10k]} )) || p10k finalize
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/renato.batista/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
