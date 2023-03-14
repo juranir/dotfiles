@@ -102,24 +102,22 @@ brew install \
   1password-cli
 
 
-  brew install --cask 1password
-  brew install --cask dbeaver-community
-  brew install --cask fig
-  brew install --cask font-fira-code-nerd-font
-  brew install --cask google-chrome
-  brew install --cask grammarly-desktop
-  brew install --cask iterm2
-  brew install --cask lens
-  brew install --cask monitorcontrol
-  brew install --cask pocket-casts
-  brew install --cask rancher
-  brew install --cask rectangle
-  brew install --cask slack
-  brew install --cask spotify
-  brew install --cask postman
-  brew install --cask visual-studio-code
-  
-fi
+brew install --cask 1password
+brew install --cask dbeaver-community
+brew install --cask fig
+brew install --cask font-fira-code-nerd-font
+brew install --cask google-chrome
+brew install --cask grammarly-desktop
+brew install --cask iterm2
+brew install --cask lens
+brew install --cask monitorcontrol
+brew install --cask pocket-casts
+brew install --cask rancher
+brew install --cask rectangle
+brew install --cask slack
+brew install --cask spotify
+brew install --cask postman
+brew install --cask visual-studio-code
 
 #echo ""
 #echo "Enable zsh theme"
