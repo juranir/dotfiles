@@ -102,9 +102,10 @@ brew install \
   1password-cli
 
 
-brew install --cask 1password
-brew install --cask dbeaver-community
-brew install --cask fig
+brew install --cask 1password \
+    dbeaver-community \
+    fig
+    
 brew install --cask font-fira-code-nerd-font
 brew install --cask google-chrome
 brew install --cask grammarly-desktop
@@ -143,7 +144,7 @@ echo
 
 # Cloning dotfiles
 cd /tmp
-yadm clone -f git@github.com:juranir/dotfiles.git
+yadm -f clone git@github.com:juranir/dotfiles.git
 cat dotfiles/.zshrc > ~/.zshrc
 cat dotfiles/.p10k.zsh > ~/.p10k.zsh
 
