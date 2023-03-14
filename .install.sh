@@ -144,7 +144,7 @@ echo
 
 # Cloning dotfiles
 cd /tmp
-yadm -f clone git@github.com:juranir/dotfiles.git
+git clone git@github.com:juranir/dotfiles.git
 cat dotfiles/.zshrc > ~/.zshrc
 cat dotfiles/.p10k.zsh > ~/.p10k.zsh
 
