@@ -72,6 +72,7 @@ echo
 
 brew tap cantino/mcfly
 brew tap homebrew/cask-fonts
+brew tap hashicorp/tap
 
 brew install \
   ansible \
@@ -99,7 +100,8 @@ brew install \
   yadm \
   wget \
   font-meslo-lg-nerd-font \
-  1password-cli
+  1password-cli \
+  hashicorp/tap/terraform
 
 
 brew install --cask 1password \
