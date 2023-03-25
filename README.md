@@ -14,6 +14,8 @@ You can run the script directly with the following command:
 curl -s -L https://raw.githubusercontent.com/juranir/dotfiles/main/.install.sh | bash
 ```
 
+We need manually change the font in shell console
+
 In the end, run the command to define ZSH as the default shell:
 
 ```bash
