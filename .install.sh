@@ -101,7 +101,8 @@ brew install \
   wget \
   font-meslo-lg-nerd-font \
   1password-cli \
-  hashicorp/tap/terraform
+  hashicorp/tap/terraform \
+  sops
 
 
 brew install --cask 1password \
