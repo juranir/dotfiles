@@ -192,8 +192,12 @@ test -d /opt/homebrew/opt/mysql-client/ && export PATH="/opt/homebrew/opt/mysql-
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 
+# Custom PATH
+#export PATH="~/OneDrive/kubectl-plugins:$PATH"
+
 # Alias
 alias ll='ls -la'
 alias k='kubectl'
 alias kx='kubectx'
 alias kc='kubectl config current-context'
+alias ldd='otool -L'
