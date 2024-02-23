@@ -200,6 +200,8 @@ alias ll='ls -la'
 alias k='kubectl'
 alias kx='kubectx'
 alias kc='kubectl config current-context'
+alias kl='kubectl logs'
+alias kw='watch kubectl'
 alias ldd='otool -L'
 alias python='python3'
 alias goc='~/OneDrive/Findmore/OutCloud/3E/gitConfig.sh && git config --list'
@@ -212,3 +214,4 @@ alias gp='~/OneDrive/gitConfig.sh && git config --list'
 #git config --global user.name "Juranir Santos"
 #git config --global user.email juranir.santos@out.cloud
 #git config --global user.signingkey 6EB655E90255A0D7
+#git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519.pub"
