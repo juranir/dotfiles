@@ -196,8 +196,9 @@ test -d /opt/homebrew/opt/mysql-client/ && export PATH="/opt/homebrew/opt/mysql-
 #export PATH="~/OneDrive/kubectl-plugins:$PATH"
 
 # Alias
-alias ll='ls -la'
-alias k='kubectl'
+alias ll='ls -la' 
+alias k='kubectl' 
+alias ke='kubectl eks'
 alias kx='kubectx'
 alias kc='kubectl config current-context'
 alias kl='kubectl logs'
@@ -205,7 +206,11 @@ alias kw='watch kubectl'
 alias ldd='otool -L'
 alias python='python3'
 alias goc='~/OneDrive/Findmore/OutCloud/3E/gitConfig.sh && git config --list'
-alias gp='~/OneDrive/gitConfig.sh && git config --list'
+alias gocaz='~/OneDrive/Findmore/OutCloud/3E/gitConfig.sh az && git config --list'
+alias gp="~/OneDrive/gitConfig.sh && git config --list"
+alias gpaz="~/OneDrive/gitConfig.sh az && git config --list"
+alias kd='kubectl describe'
+alias kl='kubectl logs'
 
 #git config --global user.name "Juranir Santos"
 #git config --global user.email juranir.santos@gmail.com
