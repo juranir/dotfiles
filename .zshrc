@@ -191,13 +191,17 @@ test -d /opt/homebrew/opt/mysql-client/ && export PATH="/opt/homebrew/opt/mysql-
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 # Custom PATH
-#export PATH="~/OneDrive/kubectl-plugins:$PATH"
+#export PATH="/Users/juranir/OneDrive/kubectl-plugins:$PATH"
+export PATH="/Users/juranir/go/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # Alias
-alias ll='ls -la' 
-alias k='kubectl' 
+#alias remove
+alias ll='ls -la'
+alias k='kubectl'
 alias ke='kubectl eks'
 alias kx='kubectx'
 alias kc='kubectl config current-context'
@@ -206,17 +210,8 @@ alias kw='watch kubectl'
 alias ldd='otool -L'
 alias python='python3'
 alias goc='~/OneDrive/Findmore/OutCloud/3E/gitConfig.sh && git config --list'
-alias gocaz='~/OneDrive/Findmore/OutCloud/3E/gitConfig.sh az && git config --list'
 alias gp="~/OneDrive/gitConfig.sh && git config --list"
 alias gpaz="~/OneDrive/gitConfig.sh az && git config --list"
 alias kd='kubectl describe'
+alias gocaz='~/OneDrive/Findmore/OutCloud/3E/gitConfig.sh az && git config --list'
 alias kl='kubectl logs'
-
-#git config --global user.name "Juranir Santos"
-#git config --global user.email juranir.santos@gmail.com
-#git config --global user.signingkey 050C59E2639B04FD
-
-#git config --global user.name "Juranir Santos"
-#git config --global user.email juranir.santos@out.cloud
-#git config --global user.signingkey 6EB655E90255A0D7
-#git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519.pub"
