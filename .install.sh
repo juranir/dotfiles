@@ -74,11 +74,11 @@ echo
 #############################################
 
 brew tap cantino/mcfly
-brew tap homebrew/cask-fonts
 brew tap hashicorp/tap
 
 brew install \
   ansible \
+  alfred \
   aws-iam-authenticator \
   aws-vault \
   awscli \
@@ -155,6 +155,8 @@ cat dotfiles/.zshrc > ~/.zshrc
 cat dotfiles/.p10k.zsh > ~/.p10k.zsh
 
 sudo -k
+
+echo "Apple Terminal: Open Terminal → Preferences → Profiles → Text, click Change under Font and select MesloLGS NF family."
 
 echo "Instalation process is now complete!"
 exit 0
