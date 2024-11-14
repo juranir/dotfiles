@@ -156,7 +156,7 @@ cat dotfiles/.p10k.zsh > ~/.p10k.zsh
 
 sudo -k
 
-echo "Apple Terminal: Open Terminal → Preferences → Profiles → Text, click Change under Font and select MesloLGS NF family."
+echo "To finish the setup open Apple Terminal: Terminal(from top bar) → Settings → Profiles → Text, click Change under Font and select MesloLGS NF family. (MesloLGS NF Regular 11)"
 
 echo "Instalation process is now complete!"
 exit 0
