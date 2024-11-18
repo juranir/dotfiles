@@ -105,7 +105,16 @@ brew install \
   font-meslo-lg-nerd-font \
   1password-cli \
   hashicorp/tap/terraform \
-  sops
+  sops \
+  gnupg \
+  pinentry-mac \
+  pyenv \
+  openssl \
+  readline \
+  sqlite3 \
+  xz \
+  zlib \
+  tcl-tk
 
 
 brew install --cask 1password \
@@ -157,6 +166,17 @@ cat dotfiles/.p10k.zsh > ~/.p10k.zsh
 sudo -k
 
 echo "To finish the setup open Apple Terminal: Terminal(from top bar) → Settings → Profiles → Text, click Change under Font and select MesloLGS NF family. (MesloLGS NF Regular 11)"
+
+###
+#git config --global user.name "Juranir Santos"
+#git config --global user.email "juranir.sntos@pmi.com"
+#git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519"
+#git config --global user.signingKey 770FDA5CD8BF7E15
+
+#pyenv install 3.13.0 
+#pyenv global 3.13.0
+#exec $SHELL
+###
 
 echo "Instalation process is now complete!"
 exit 0
